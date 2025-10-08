@@ -79,6 +79,21 @@
 <colAssociation fkAssociation="C631AA70-C930-47A3-0331-FDCE5EDEF9ED" referredColumn="470D1ACF-2589-42A6-686F-A0C5AA5A4A68"/>
 </associations>
 </Column>
+<Column name="MANUFACTURER_MANUFAC_ID2" id="D1A4B249-9A0B-0EDA-E988-A576228451EC">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 21:49:12 UTC</createdTime>
+<generatorID>A436C6CC-7A0F-F471-F9E1-BAF9A80E7D5E</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99851F8B-7521-6237-DFC0-6444D5230009" referredColumn="470D1ACF-2589-42A6-686F-A0C5AA5A4A68"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="197D28FE-5B1F-EA3B-9EFA-9812E2D86C00" name="BATCH_MEDICINE_PK">
@@ -113,6 +128,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DECB7A7D-FFF5-B48A-2A9D-788A9F87790B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1AAEDF0-676F-3A69-B7EA-D03921708759" name="BATCH_MEDICINE_MANUFACTURER_FKv2">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 21:49:12 UTC</createdTime>
+<generatorID>2B22E276-10EE-6E20-252E-4A54CA1B0DEB</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1A4B249-9A0B-0EDA-E988-A576228451EC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

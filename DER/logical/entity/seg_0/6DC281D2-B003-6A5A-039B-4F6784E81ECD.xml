@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="LOCATION_ID" id="273BE1B7-2A06-03DD-7545-6FCFE5B5DFAC">
+<Attribute name="LOCATION_ID_STOCK" id="273BE1B7-2A06-03DD-7545-6FCFE5B5DFAC">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-04 20:13:28 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>

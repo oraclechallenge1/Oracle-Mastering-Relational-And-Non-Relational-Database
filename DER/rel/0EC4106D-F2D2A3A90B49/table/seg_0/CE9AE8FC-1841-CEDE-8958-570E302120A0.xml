@@ -61,7 +61,7 @@
 <colAssociation fkAssociation="3894514B-E6A8-6D28-F0B2-10D59C04B099" referredColumn="45CA5D22-217D-C2D0-52C5-4EDC83DF5B12"/>
 </associations>
 </Column>
-<Column name="LOCATION_STOCK_LOCATION_ID" id="9F3ADAF0-8D09-6321-83E6-0BCC77F20DE6">
+<Column name="LOCATION_STOCK_LOCATION_ID_STOCK" id="9F3ADAF0-8D09-6321-83E6-0BCC77F20DE6">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-04 20:17:27 UTC</createdTime>
 <generatorID>DB7B0278-D43A-67D7-57FD-C92B3F01E102</generatorID>

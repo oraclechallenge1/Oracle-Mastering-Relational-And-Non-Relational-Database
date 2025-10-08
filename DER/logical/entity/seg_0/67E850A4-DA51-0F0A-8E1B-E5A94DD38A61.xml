@@ -68,7 +68,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="LOCATION_ID" id="DB7B0278-D43A-67D7-57FD-C92B3F01E102">
+<Attribute name="LOCATION_ID_STOCK" id="DB7B0278-D43A-67D7-57FD-C92B3F01E102">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-04 20:15:17 UTC</createdTime>
 <generatorID>1A89E10C-8918-DF08-E5E1-563EBB9EB4EF</generatorID>

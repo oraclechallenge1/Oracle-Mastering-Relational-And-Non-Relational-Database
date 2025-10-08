@@ -76,10 +76,10 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MANUFAC_ID" id="2CCB8F2F-EE8D-5196-84AF-68483A8275D7">
-<createdBy>Cleyton</createdBy>
-<createdTime>2025-10-07 12:11:12 UTC</createdTime>
-<generatorID>EEF37733-3E37-4A97-9C2D-74CA0EB750C5</generatorID>
+<Attribute name="MANUFAC_ID" id="A436C6CC-7A0F-F471-F9E1-BAF9A80E7D5E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 21:46:56 UTC</createdTime>
+<generatorID>2B22E276-10EE-6E20-252E-4A54CA1B0DEB</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <engineerTo>
 <item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
@@ -96,8 +96,9 @@
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-04 19:21:21 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
