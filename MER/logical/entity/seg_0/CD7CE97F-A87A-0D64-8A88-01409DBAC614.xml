@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD7CE97F-A87A-0D64-8A88-01409DBAC614" name="MEDICINES">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 19:54:40 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MEDICINE_ID" id="6DED2FEC-341C-5BB1-7BE9-5E1AEC79355D">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 19:54:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME_MEDICATION" id="BB898683-3F9C-BD56-4ED6-93D4FCB2D2C4">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS_MED" id="0D2FE68D-03B9-4A18-F88F-9AEE0E7261C0">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 19:56:22 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORY_MED_ID" id="A356060A-D119-6585-CB69-81092AEE9EA5">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:16:33 UTC</createdTime>
+<generatorID>6A05741F-FFBF-410B-1464-ACDEE7B143DA</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>728B1E7E-9DC9-9C52-D347-66D961158B4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT_MEA_ID" id="BAF8012A-E8E6-DF2E-60A8-DD6C1830D438">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:21:10 UTC</createdTime>
+<generatorID>9B171E19-D8B8-48E0-E0B3-B22DFFDE81E1</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>AD76D53B-5DD5-BB12-A9E0-6039E6214BE5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PHARM_FORM_ID" id="5C343D26-DFD4-3AD7-D29F-B042B9252DDE">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:23:27 UTC</createdTime>
+<generatorID>FC9A8E02-3181-6211-AA95-AAE247A7CFCD</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>A902C871-5E45-EF1F-6ACA-6A60609FA63C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACT_INGRE_ID" id="317270B7-F5EE-6F7F-DBB0-AFB7DBAFC17F">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:30:39 UTC</createdTime>
+<generatorID>D9EC85ED-E024-04D7-FCDC-28E0383BF2A4</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>B2101FE0-F7CE-3954-EA31-F4D5AC2490B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9DAC43F9-D8E5-E434-122A-E66ADACC4D7D" name="MEDICINES PK">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 19:55:00 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6DED2FEC-341C-5BB1-7BE9-5E1AEC79355D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

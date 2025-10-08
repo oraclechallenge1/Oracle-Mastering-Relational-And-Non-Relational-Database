@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEE02E65-7748-BEC9-AC7E-91FD5D006CF9" name="ADDRESS_STOCK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>D42BEA27-8E87-4173-0AD5-8993C7ECE22B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADDRESS_ID_STOCK" id="00228497-1CD2-9D18-D297-16A096135B48">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>F214930B-FACE-10DE-65C1-6399C3270026</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPLEMENT" id="4EBD8AB1-D00B-C255-A9EB-CC94BFE56485">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>B2C4EAB4-7D1E-A036-9CF6-A66D0A580FCC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMBER" id="847EB884-6DA7-7A61-BCB5-917F87047512">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>C9F69385-7B46-D8CE-5631-AED107700FDC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="9EA62CFD-4809-88B7-99A9-DF2518466BEC">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>3B57FC40-C7AD-64F0-8E78-690C6327AFD4</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="E97B238B-A6D7-F828-EFAB-35ACA992885F">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>69D0D3C2-7AC9-29AD-9194-A69858F5C4B7</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NEIGHBOURHOOD_NEIGH_ID" id="4A815BE2-F3A1-A58F-77FB-4794848EF03F">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>4CEDCF7A-0047-2003-C347-D0A8A66BFF2B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A303FEF-08A3-537C-EB94-A860B8E3AA6A" referredColumn="A1940A44-3458-C4F4-4469-CC8E82331812"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DB22E56-45A0-7008-0823-368F2C227C52" name="ADDRESS_STOCK_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>7911793B-8022-EBA0-6EAF-A3110759E166</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00228497-1CD2-9D18-D297-16A096135B48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12141003-B384-5451-977C-488FD0056A76" name="ADDRESS_STOCK__IDX">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8D2781CD-15B0-7779-5EDE-BC7A355205B2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4A815BE2-F3A1-A58F-77FB-4794848EF03F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F10588D-9DFE-33A8-4B9D-3F9A1FC0B865" name="ADDRESS_STOCK_NEIGHBOURHOOD_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-07 23:20:38 UTC</createdTime>
+<generatorID>8D2781CD-15B0-7779-5EDE-BC7A355205B2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A815BE2-F3A1-A58F-77FB-4794848EF03F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

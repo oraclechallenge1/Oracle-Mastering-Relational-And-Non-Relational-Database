@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39CBF5EB-57C5-DE02-BE1E-D23F566B5215" name="CONTACT_MANUFACTURER">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>4D163855-5DF4-6D7F-6211-1DC73BBE7F71</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTACT_MANU_ID" id="C522E0B9-58E7-4D91-6A9C-771260E76207">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>F9F0526B-1A53-3E9F-8E19-2FE58412AAD7</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL_MANU" id="7C0324BD-E7B9-2B50-A1EA-E1ACCA679093">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>5A694708-7F69-1334-E5FE-F520F028E0A2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER_MANU" id="D9BA075C-6500-456C-DAD6-11D57C872AE8">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>079F31C4-A0D8-9991-6511-1ED98CB0A36C</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2EB1348-3700-E18E-864B-3F7268611679" name="CONTACT_MANUFACTURER_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>3E70C401-A0E0-91C7-0EC2-77F6B36BB082</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C522E0B9-58E7-4D91-6A9C-771260E76207"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="642E83F9-B188-803D-849F-F0E5170E1435" name="CONTACT_MANUFACTURER_PHONE_NUMBER_MANU_UN">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>C7D976F9-4787-B574-988C-20200E0B482F</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9BA075C-6500-456C-DAD6-11D57C872AE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4778C1A1-FEE3-6C94-0993-85BBE023AC2E" name="CONTACT_MANUFACTURER_EMAIL_MANU_UN">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>18216900-3E40-56D0-9CEA-B7C340829465</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C0324BD-E7B9-2B50-A1EA-E1ACCA679093"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

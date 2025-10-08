@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7DFDBBCE-85F6-A709-8D28-1D9530D53A66" containerWithKeyObject="CE9AE8FC-1841-CEDE-8958-570E302120A0" localFKIndex="B33D9398-D593-2595-23FC-BAF2A13F681F" name="STOCK_BATCH_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>4451E46F-EA71-1E5B-89D3-FE16313F4DCE</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<referredTableLongName>BATCH</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37149DAB-DFE7-914D-1433-E948267ADAFB</referredTableID>
+<keyObject>197D28FE-5B1F-EA3B-9EFA-9812E2D86C00</keyObject>
+<referredKeyID>197D28FE-5B1F-EA3B-9EFA-9812E2D86C00</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BATCH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

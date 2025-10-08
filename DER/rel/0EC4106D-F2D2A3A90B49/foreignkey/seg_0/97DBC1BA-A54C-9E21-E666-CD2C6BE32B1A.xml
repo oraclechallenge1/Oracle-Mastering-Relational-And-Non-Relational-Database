@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97DBC1BA-A54C-9E21-E666-CD2C6BE32B1A" containerWithKeyObject="64372230-49B7-8259-862F-02D8501AE25C" localFKIndex="A0E4F262-7D4B-2462-BF76-E9F19BF6C373" name="MEDICINES_UNIT_MEASURE_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>9B171E19-D8B8-48E0-E0B3-B22DFFDE81E1</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<referredTableLongName>UNIT_MEASURE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4856F5F9-6BD9-7158-BA53-24626717FA20</referredTableID>
+<keyObject>47EE35EF-5052-7403-FE2F-E5EF79CC7453</keyObject>
+<referredKeyID>47EE35EF-5052-7403-FE2F-E5EF79CC7453</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>UNIT_MEA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

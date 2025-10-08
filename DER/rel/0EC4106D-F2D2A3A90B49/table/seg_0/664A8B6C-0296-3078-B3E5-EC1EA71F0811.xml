@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="664A8B6C-0296-3078-B3E5-EC1EA71F0811" name="ADDRESS_STOCK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>D42BEA27-8E87-4173-0AD5-8993C7ECE22B</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADDRESS_ID_STOCK" id="D874F5A8-65B5-56FD-3B7C-5E49A5E8B78B">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>F214930B-FACE-10DE-65C1-6399C3270026</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPLEMENT" id="AAFB2ABF-D02B-FCEA-CF2B-966B2C96B749">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>B2C4EAB4-7D1E-A036-9CF6-A66D0A580FCC</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMBER_STOCK" id="9535655A-3A60-CCC0-9082-D684FD7E5DE5">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>C9F69385-7B46-D8CE-5631-AED107700FDC</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRESS_DESCRIPTION" id="48C264E0-7ED4-8D51-2D55-61D32642824B">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>3B57FC40-C7AD-64F0-8E78-690C6327AFD4</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="D562FA6C-10B5-A913-9AFA-71CCDD5ECAC2">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>69D0D3C2-7AC9-29AD-9194-A69858F5C4B7</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NEIGHBOURHOOD_NEIGH_ID" id="AA1FCF7E-967B-1A84-B7B6-11C97C61D4FD">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>4CEDCF7A-0047-2003-C347-D0A8A66BFF2B</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AF7D5E4-9E5E-574D-D8AC-AE3D0D7DE63B" referredColumn="A1940A44-3458-C4F4-4469-CC8E82331812"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A3DB6ED-6741-AC32-81D8-6E9BBDC37960" name="ADDRESS_STOCK_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>7911793B-8022-EBA0-6EAF-A3110759E166</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D874F5A8-65B5-56FD-3B7C-5E49A5E8B78B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="839F9A8C-5384-CE66-CEDA-03488F5ACCBB" name="ADDRESS_STOCK__IDX">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8D2781CD-15B0-7779-5EDE-BC7A355205B2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AA1FCF7E-967B-1A84-B7B6-11C97C61D4FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="405D54AD-4981-F183-0CD3-D57F149185F3" name="ADDRESS_STOCK_NEIGHBOURHOOD_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>8D2781CD-15B0-7779-5EDE-BC7A355205B2</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA1FCF7E-967B-1A84-B7B6-11C97C61D4FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

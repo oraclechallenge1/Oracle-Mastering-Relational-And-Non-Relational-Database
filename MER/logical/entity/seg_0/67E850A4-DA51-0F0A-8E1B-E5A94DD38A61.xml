@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="67E850A4-DA51-0F0A-8E1B-E5A94DD38A61" name="STOCK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:32:55 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STOCK_ID" id="637C00A5-05BE-8757-D9A6-9FF0470A98EC">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:33:17 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTITY" id="FF896115-0ECC-D007-6E33-C953CA1B6B31">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:33:35 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BATCH_ID" id="510AC96B-8FBD-FE5B-1298-A02706761D9D">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:03:25 UTC</createdTime>
+<generatorID>4451E46F-EA71-1E5B-89D3-FE16313F4DCE</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>A6E3365D-4791-63E5-1AEA-FD8144710C54</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEDICINE_ID" id="A7FF51EB-811B-A38B-51D0-D86B40E50E66">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:05:18 UTC</createdTime>
+<generatorID>C5BF427D-416B-4FF5-EF41-5E0493057BCE</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>6DED2FEC-341C-5BB1-7BE9-5E1AEC79355D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCATION_ID" id="DB7B0278-D43A-67D7-57FD-C92B3F01E102">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:15:17 UTC</createdTime>
+<generatorID>1A89E10C-8918-DF08-E5E1-563EBB9EB4EF</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>273BE1B7-2A06-03DD-7545-6FCFE5B5DFAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B5A15D5-D885-F58C-C1BE-FA784547C130" name="STOCK PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:33:30 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>637C00A5-05BE-8757-D9A6-9FF0470A98EC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
