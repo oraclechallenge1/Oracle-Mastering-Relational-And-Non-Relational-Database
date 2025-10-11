@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="257F618B-779F-B6C8-7B78-74C58AE5CA51" name="POSITION_USER">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="257F618B-779F-B6C8-7B78-74C58AE5CA51" name="ROLE_USER">
 <createdBy>Cleyton</createdBy>
 <createdTime>2025-10-03 21:10:54 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="USER_POSITION" id="39FFECF0-9881-22FA-C2EF-3A1B4AD9E32D">
+<Attribute name="USER_ROLE" id="39FFECF0-9881-22FA-C2EF-3A1B4AD9E32D">
 <createdBy>Cleyton</createdBy>
 <createdTime>2025-10-03 21:11:31 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
