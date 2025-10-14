@@ -55,7 +55,7 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="POSITION_USER_POS_USER_ID" id="CDCB9F10-2378-1873-CD3C-961A972F306E">
+<Column name="ROLE_USER_POS_USER_ID" id="CDCB9F10-2378-1873-CD3C-961A972F306E">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-04 20:17:27 UTC</createdTime>
 <generatorID>765EE7EE-1852-E171-C5AA-C491839BF47C</generatorID>
@@ -151,7 +151,7 @@
 <colUsage columnID="8D38FDFA-DBFD-67B0-269A-FA9A2B30959B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="83450D92-16C7-47FE-B98D-263A5BE1552B" name="USERS_SYS_POSITION_USER_FK">
+<ind_PK_UK id="83450D92-16C7-47FE-B98D-263A5BE1552B" name="USERS_SYS_ROLE_USER_FK">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-04 20:17:27 UTC</createdTime>
 <generatorID>7C338C5B-3671-F611-7F13-52BC092AE5C8</generatorID>
@@ -184,7 +184,7 @@
 <colUsage columnID="428BFC80-3942-ACA3-E50E-C64F78788E4B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7E829AE8-B2A0-7968-DBB2-7E16A0CD352A" name="USERS_SYS_CONTACT_USER_FKv2">
+<ind_PK_UK id="7E829AE8-B2A0-7968-DBB2-7E16A0CD352A" name="USERS_SYS_CONTACT_USER_FKv1">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-08 00:32:50 UTC</createdTime>
 <generatorID>2B58605F-7D85-1758-0EF2-D1ADC3832D62</generatorID>

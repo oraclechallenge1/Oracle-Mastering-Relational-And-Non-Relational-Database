@@ -66,7 +66,7 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="POS_USER_ID" id="765EE7EE-1852-E171-C5AA-C491839BF47C">
+<Attribute name="ROLE_USER_ID" id="765EE7EE-1852-E171-C5AA-C491839BF47C">
 <createdBy>Cleyton</createdBy>
 <createdTime>2025-10-03 21:12:12 UTC</createdTime>
 <generatorID>7C338C5B-3671-F611-7F13-52BC092AE5C8</generatorID>
@@ -114,8 +114,9 @@
 <createdBy>Cleyton</createdBy>
 <createdTime>2025-10-03 21:07:53 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -126,8 +127,9 @@
 <createdBy>Cleyton</createdBy>
 <createdTime>2025-10-03 21:09:13 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="false"/>
 </engineerTo>
 <newElementsIDs>299EA4D7-1257-AFA4-8E99-4DF37E26250C</newElementsIDs>
 <usedAttributes>

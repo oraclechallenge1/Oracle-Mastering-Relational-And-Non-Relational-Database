@@ -1,4 +1,6 @@
-
+------------------------------------------
+-- 1) LOCAL DE ENDEREÇO
+------------------------------------------
 CREATE TABLE STATES (
   STATE_ID    NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   STATE_NAME  VARCHAR2(255) NOT NULL
@@ -42,9 +44,9 @@ CREATE TABLE ADDRESS_STOCK (
     FOREIGN KEY (NEIGH_ID) REFERENCES NEIGHBOURHOOD(NEIGH_ID)
 );
 
----------------------
+------------------------------------------
 -- 2) LOCAL DE ESTOQUE
----------------------
+------------------------------------------
 
 CREATE TABLE LOCATION_STOCK (
   LOCATION_ID_STOCK     NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -173,7 +175,7 @@ CREATE TABLE MEDICINE_PHARM_FORM (
 );
 
 ------------------------------------------
--- 7) LOTES / ESTOQUE / MOVIMENTOS
+-- 7) LOTES
 ------------------------------------------
 
 CREATE TABLE BATCH_MEDICINE (
@@ -223,7 +225,7 @@ CREATE TABLE MEDICINE_DISPENSE (
 CREATE TABLE STOCK_MOVEMENT (
   STOCK_MOVEMENT_ID   NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   QUANTITY_DISPENSED  NUMBER(6)    NOT NULL, 
-  DATA_MOVIMENT DATE NOT NULL,
+  DATE_MOVIMENT DATE NOT NULL,
   MOVEMENT_TYPE_ID    NUMBER,  
   STOCK_ID            NUMBER       NOT NULL,  
   DISPENSATION_ID     NUMBER       NOT NULL, 
@@ -235,7 +237,10 @@ CREATE TABLE STOCK_MOVEMENT (
 
 );
 
--- STATES (15)
+---------------------
+-- INSERT STATES
+---------------------
+
 INSERT INTO STATES (STATE_NAME) VALUES ('São Paulo');
 INSERT INTO STATES (STATE_NAME) VALUES ('Rio de Janeiro');
 INSERT INTO STATES (STATE_NAME) VALUES ('Minas Gerais');
@@ -252,7 +257,9 @@ INSERT INTO STATES (STATE_NAME) VALUES ('Mato Grosso');
 INSERT INTO STATES (STATE_NAME) VALUES ('Mato Grosso do Sul');
 INSERT INTO STATES (STATE_NAME) VALUES ('Pará');
 
--- CITY (15)
+---------------------
+-- INSERT CITY
+---------------------
 INSERT INTO CITY (NAME_CITY, STATE_ID) VALUES ('São Paulo', 1);
 INSERT INTO CITY (NAME_CITY, STATE_ID) VALUES ('Campinas', 1);
 INSERT INTO CITY (NAME_CITY, STATE_ID) VALUES ('Santos', 1);
@@ -269,7 +276,9 @@ INSERT INTO CITY (NAME_CITY, STATE_ID) VALUES ('Joinville', 6);
 INSERT INTO CITY (NAME_CITY, STATE_ID) VALUES ('Salvador', 7);
 INSERT INTO CITY (NAME_CITY, STATE_ID) VALUES ('Recife', 8);
 
--- NEIGHBOURHOOD (15)
+------------------------------------------
+-- INSERT NEIGHBOURHOOD
+------------------------------------------
 INSERT INTO NEIGHBOURHOOD (NEIGH_NAME, CITY_ID) VALUES ('Centro', 1);
 INSERT INTO NEIGHBOURHOOD (NEIGH_NAME, CITY_ID) VALUES ('Pinheiros', 1);
 INSERT INTO NEIGHBOURHOOD (NEIGH_NAME, CITY_ID) VALUES ('Moema', 1);
@@ -286,7 +295,9 @@ INSERT INTO NEIGHBOURHOOD (NEIGH_NAME, CITY_ID) VALUES ('América', 13);
 INSERT INTO NEIGHBOURHOOD (NEIGH_NAME, CITY_ID) VALUES ('Barra', 14);
 INSERT INTO NEIGHBOURHOOD (NEIGH_NAME, CITY_ID) VALUES ('Boa Viagem', 15);
 
--- ADDRESS_MANUFACTURER (15)
+------------------------------------------
+-- INSERT ADDRESS_MANUFACTURER
+------------------------------------------
 INSERT INTO ADDRESS_MANUFACTURER (COMPLEMENT, NUMBER_MANU, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Bloco A', 101, 'Rua Industrial 1', 10000137, 1);
 INSERT INTO ADDRESS_MANUFACTURER (COMPLEMENT, NUMBER_MANU, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Bloco B', 102, 'Rua Industrial 2', 10000274, 2);
 INSERT INTO ADDRESS_MANUFACTURER (COMPLEMENT, NUMBER_MANU, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Bloco C', 103, 'Rua Industrial 3', 10000411, 3);
@@ -303,7 +314,9 @@ INSERT INTO ADDRESS_MANUFACTURER (COMPLEMENT, NUMBER_MANU, ADDRESS_DESCRIPTION, 
 INSERT INTO ADDRESS_MANUFACTURER (COMPLEMENT, NUMBER_MANU, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Bloco D', 114, 'Rua Industrial 14', 10001918, 14);
 INSERT INTO ADDRESS_MANUFACTURER (COMPLEMENT, NUMBER_MANU, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Bloco E', 115, 'Rua Industrial 15', 10002055, 15);
 
--- ADDRESS_STOCK (15)
+---------------------
+-- ADDRESS_STOCK
+---------------------
 INSERT INTO ADDRESS_STOCK (COMPLEMENT, NUMBER_STOCK, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Depósito', 201, 'Av. Logística 1', 20000149, 1);
 INSERT INTO ADDRESS_STOCK (COMPLEMENT, NUMBER_STOCK, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Depósito', 202, 'Av. Logística 2', 20000298, 2);
 INSERT INTO ADDRESS_STOCK (COMPLEMENT, NUMBER_STOCK, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Galpão 3', 203, 'Av. Logística 3', 20000447, 3);
@@ -320,7 +333,9 @@ INSERT INTO ADDRESS_STOCK (COMPLEMENT, NUMBER_STOCK, ADDRESS_DESCRIPTION, CEP, N
 INSERT INTO ADDRESS_STOCK (COMPLEMENT, NUMBER_STOCK, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Depósito', 214, 'Av. Logística 14', 20002086, 14);
 INSERT INTO ADDRESS_STOCK (COMPLEMENT, NUMBER_STOCK, ADDRESS_DESCRIPTION, CEP, NEIGH_ID) VALUES ('Galpão 15', 215, 'Av. Logística 15', 20002235, 15);
 
--- LOCATION_STOCK (15)
+------------------------------------------
+-- INSERT LOCATION_STOCK
+------------------------------------------
 INSERT INTO LOCATION_STOCK (NAME_LOCATION, LOCATION_STOCK_NAME, ADDRESS_ID_STOCK) VALUES ('Almox 1', 'Almoxarifado principal 1', 1);
 INSERT INTO LOCATION_STOCK (NAME_LOCATION, LOCATION_STOCK_NAME, ADDRESS_ID_STOCK) VALUES ('Almox 2', 'Almoxarifado principal 2', 2);
 INSERT INTO LOCATION_STOCK (NAME_LOCATION, LOCATION_STOCK_NAME, ADDRESS_ID_STOCK) VALUES ('Almox 3', 'Almoxarifado principal 3', 3);
@@ -337,7 +352,9 @@ INSERT INTO LOCATION_STOCK (NAME_LOCATION, LOCATION_STOCK_NAME, ADDRESS_ID_STOCK
 INSERT INTO LOCATION_STOCK (NAME_LOCATION, LOCATION_STOCK_NAME, ADDRESS_ID_STOCK) VALUES ('Almox 14', 'Almoxarifado principal 14', 14);
 INSERT INTO LOCATION_STOCK (NAME_LOCATION, LOCATION_STOCK_NAME, ADDRESS_ID_STOCK) VALUES ('Almox 15', 'Almoxarifado principal 15', 15);
 
--- CONTACT_USER (15)
+------------------------------------------
+-- INSERT CONTACT_USER
+------------------------------------------
 INSERT INTO CONTACT_USER (EMAIL_USER, PHONE_NUMBER_USER) VALUES ('usuario1@medsave.com', 5501199990001);
 INSERT INTO CONTACT_USER (EMAIL_USER, PHONE_NUMBER_USER) VALUES ('usuario2@medsave.com', 5501199990002);
 INSERT INTO CONTACT_USER (EMAIL_USER, PHONE_NUMBER_USER) VALUES ('usuario3@medsave.com', 5501199990003);
@@ -354,7 +371,9 @@ INSERT INTO CONTACT_USER (EMAIL_USER, PHONE_NUMBER_USER) VALUES ('usuario13@meds
 INSERT INTO CONTACT_USER (EMAIL_USER, PHONE_NUMBER_USER) VALUES ('usuario14@medsave.com', 5501199990014);
 INSERT INTO CONTACT_USER (EMAIL_USER, PHONE_NUMBER_USER) VALUES ('usuario15@medsave.com', 5501199990015);
 
--- ROLE_USER (15)
+---------------------
+-- INSERT ROLE_USER
+---------------------
 INSERT INTO ROLE_USER (USER_ROLE) VALUES ('ADMIN');
 INSERT INTO ROLE_USER (USER_ROLE) VALUES ('FARMACÊUTICO');
 INSERT INTO ROLE_USER (USER_ROLE) VALUES ('TÉCNICO_FARMA');
@@ -371,7 +390,9 @@ INSERT INTO ROLE_USER (USER_ROLE) VALUES ('LOGÍSTICA');
 INSERT INTO ROLE_USER (USER_ROLE) VALUES ('INVENTÁRIO');
 INSERT INTO ROLE_USER (USER_ROLE) VALUES ('VISUALIZADOR');
 
--- PROFILE_USER (15)
+------------------------------------------
+-- INSERT PROFILE_USER
+------------------------------------------
 INSERT INTO PROFILE_USER (USER_PROFILE) VALUES ('Padrão');
 INSERT INTO PROFILE_USER (USER_PROFILE) VALUES ('Avançado');
 INSERT INTO PROFILE_USER (USER_PROFILE) VALUES ('Restrito');
@@ -388,7 +409,9 @@ INSERT INTO PROFILE_USER (USER_PROFILE) VALUES ('Logística');
 INSERT INTO PROFILE_USER (USER_PROFILE) VALUES ('Inventário');
 INSERT INTO PROFILE_USER (USER_PROFILE) VALUES ('Somente Leitura');
 
--- USERS_SYS (15)
+---------------------
+-- INSERT USERS_SYS
+---------------------
 INSERT INTO USERS_SYS (NAME_USER, LOGIN, PASSWORD_USER, ROLE_USER_ID, PROF_USER_ID, CONTACT_USER_ID) VALUES ('Usuário 1', 'user01', 'hash_senha_01', 1, 1, 1);
 INSERT INTO USERS_SYS (NAME_USER, LOGIN, PASSWORD_USER, ROLE_USER_ID, PROF_USER_ID, CONTACT_USER_ID) VALUES ('Usuário 2', 'user02', 'hash_senha_02', 2, 2, 2);
 INSERT INTO USERS_SYS (NAME_USER, LOGIN, PASSWORD_USER, ROLE_USER_ID, PROF_USER_ID, CONTACT_USER_ID) VALUES ('Usuário 3', 'user03', 'hash_senha_03', 3, 3, 3);
@@ -405,7 +428,9 @@ INSERT INTO USERS_SYS (NAME_USER, LOGIN, PASSWORD_USER, ROLE_USER_ID, PROF_USER_
 INSERT INTO USERS_SYS (NAME_USER, LOGIN, PASSWORD_USER, ROLE_USER_ID, PROF_USER_ID, CONTACT_USER_ID) VALUES ('Usuário 14', 'user14', 'hash_senha_14', 14, 14, 14);
 INSERT INTO USERS_SYS (NAME_USER, LOGIN, PASSWORD_USER, ROLE_USER_ID, PROF_USER_ID, CONTACT_USER_ID) VALUES ('Usuário 15', 'user15', 'hash_senha_15', 15, 15, 15);
 
--- CONTACT_MANUFACTURER (15)
+------------------------------------------
+-- INSERT CONTACT_MANUFACTURER
+------------------------------------------
 INSERT INTO CONTACT_MANUFACTURER (EMAIL_MANU, PHONE_NUMBER_MANU) VALUES ('contato1@fabricante.com', 5501123456001);
 INSERT INTO CONTACT_MANUFACTURER (EMAIL_MANU, PHONE_NUMBER_MANU) VALUES ('contato2@fabricante.com', 5501123456002);
 INSERT INTO CONTACT_MANUFACTURER (EMAIL_MANU, PHONE_NUMBER_MANU) VALUES ('contato3@fabricante.com', 5501123456003);
@@ -422,7 +447,9 @@ INSERT INTO CONTACT_MANUFACTURER (EMAIL_MANU, PHONE_NUMBER_MANU) VALUES ('contat
 INSERT INTO CONTACT_MANUFACTURER (EMAIL_MANU, PHONE_NUMBER_MANU) VALUES ('contato14@fabricante.com', 5501123456014);
 INSERT INTO CONTACT_MANUFACTURER (EMAIL_MANU, PHONE_NUMBER_MANU) VALUES ('contato15@fabricante.com', 5501123456015);
 
--- MANUFACTURER (15)
+------------------------------------------
+-- INSERT MANUFACTURER
+------------------------------------------
 INSERT INTO MANUFACTURER (NAME_MANU, CNPJ, ADDRESS_ID_MANUFACTURER, CONTACT_MANU_ID) VALUES ('Fabricante 1 S.A.', 10000000000001, 1, 1);
 INSERT INTO MANUFACTURER (NAME_MANU, CNPJ, ADDRESS_ID_MANUFACTURER, CONTACT_MANU_ID) VALUES ('Fabricante 2 S.A.', 10000000000002, 2, 2);
 INSERT INTO MANUFACTURER (NAME_MANU, CNPJ, ADDRESS_ID_MANUFACTURER, CONTACT_MANU_ID) VALUES ('Fabricante 3 S.A.', 10000000000003, 3, 3);
@@ -439,7 +466,9 @@ INSERT INTO MANUFACTURER (NAME_MANU, CNPJ, ADDRESS_ID_MANUFACTURER, CONTACT_MANU
 INSERT INTO MANUFACTURER (NAME_MANU, CNPJ, ADDRESS_ID_MANUFACTURER, CONTACT_MANU_ID) VALUES ('Fabricante 14 S.A.', 10000000000014, 14, 14);
 INSERT INTO MANUFACTURER (NAME_MANU, CNPJ, ADDRESS_ID_MANUFACTURER, CONTACT_MANU_ID) VALUES ('Fabricante 15 S.A.', 10000000000015, 15, 15);
 
--- ACTIVE_INGREDIENT (15)
+------------------------------------------
+-- INSERT ACTIVE_INGREDIENT
+------------------------------------------
 INSERT INTO ACTIVE_INGREDIENT (ACT_INGREDIENT) VALUES ('Paracetamol');
 INSERT INTO ACTIVE_INGREDIENT (ACT_INGREDIENT) VALUES ('Ibuprofeno');
 INSERT INTO ACTIVE_INGREDIENT (ACT_INGREDIENT) VALUES ('Amoxicilina');
@@ -456,7 +485,9 @@ INSERT INTO ACTIVE_INGREDIENT (ACT_INGREDIENT) VALUES ('Hidroclorotiazida');
 INSERT INTO ACTIVE_INGREDIENT (ACT_INGREDIENT) VALUES ('Diclofenaco');
 INSERT INTO ACTIVE_INGREDIENT (ACT_INGREDIENT) VALUES ('Prednisona');
 
--- PHARMACEUTICAL_FORM (15)
+------------------------------------------
+-- INSERT PHARMACEUTICAL_FORM
+------------------------------------------
 INSERT INTO PHARMACEUTICAL_FORM (PHARMA_FORM) VALUES ('Comprimido');
 INSERT INTO PHARMACEUTICAL_FORM (PHARMA_FORM) VALUES ('Cápsula');
 INSERT INTO PHARMACEUTICAL_FORM (PHARMA_FORM) VALUES ('Solução Oral');
@@ -473,7 +504,9 @@ INSERT INTO PHARMACEUTICAL_FORM (PHARMA_FORM) VALUES ('Pó para Reconstituição
 INSERT INTO PHARMACEUTICAL_FORM (PHARMA_FORM) VALUES ('Spray Nasal');
 INSERT INTO PHARMACEUTICAL_FORM (PHARMA_FORM) VALUES ('Colírio');
 
--- UNIT_MEASURE (15)
+------------------------------------------
+-- INSERT UNIT_MEASURE
+------------------------------------------
 INSERT INTO UNIT_MEASURE (UNIT_MEASURE_MEDICINE) VALUES ('mg');
 INSERT INTO UNIT_MEASURE (UNIT_MEASURE_MEDICINE) VALUES ('g');
 INSERT INTO UNIT_MEASURE (UNIT_MEASURE_MEDICINE) VALUES ('mcg');
@@ -490,7 +523,9 @@ INSERT INTO UNIT_MEASURE (UNIT_MEASURE_MEDICINE) VALUES ('fr');
 INSERT INTO UNIT_MEASURE (UNIT_MEASURE_MEDICINE) VALUES ('cp');
 INSERT INTO UNIT_MEASURE (UNIT_MEASURE_MEDICINE) VALUES ('cáps');
 
--- CATEGORY_MEDICINE (15)
+------------------------------------------
+-- INSERT CATEGORY_MEDICINE
+------------------------------------------
 INSERT INTO CATEGORY_MEDICINE (CATEGORY) VALUES ('Analgésico');
 INSERT INTO CATEGORY_MEDICINE (CATEGORY) VALUES ('Antibiótico');
 INSERT INTO CATEGORY_MEDICINE (CATEGORY) VALUES ('Anti-inflamatório');
@@ -507,7 +542,9 @@ INSERT INTO CATEGORY_MEDICINE (CATEGORY) VALUES ('Antialérgico');
 INSERT INTO CATEGORY_MEDICINE (CATEGORY) VALUES ('Broncodilatador');
 INSERT INTO CATEGORY_MEDICINE (CATEGORY) VALUES ('Corticosteroide');
 
--- MEDICINES (15)
+------------------------------------------
+-- INSERT MEDICINES
+------------------------------------------
 INSERT INTO MEDICINES (NAME_MEDICATION, STATUS_MED, CATEGORY_MED_ID, UNIT_MEA_ID) VALUES ('Paracetamol 750mg', 'Ativo', 1, 1);
 INSERT INTO MEDICINES (NAME_MEDICATION, STATUS_MED, CATEGORY_MED_ID, UNIT_MEA_ID) VALUES ('Ibuprofeno 400mg', 'Ativo', 3, 1);
 INSERT INTO MEDICINES (NAME_MEDICATION, STATUS_MED, CATEGORY_MED_ID, UNIT_MEA_ID) VALUES ('Amoxicilina 500mg', 'Ativo', 2, 1);
@@ -524,7 +561,9 @@ INSERT INTO MEDICINES (NAME_MEDICATION, STATUS_MED, CATEGORY_MED_ID, UNIT_MEA_ID
 INSERT INTO MEDICINES (NAME_MEDICATION, STATUS_MED, CATEGORY_MED_ID, UNIT_MEA_ID) VALUES ('Diclofenaco 50mg', 'Ativo', 3, 1);
 INSERT INTO MEDICINES (NAME_MEDICATION, STATUS_MED, CATEGORY_MED_ID, UNIT_MEA_ID) VALUES ('Prednisona 20mg', 'Ativo', 15, 1);
 
--- MEDICINE_ACTIVE_INGR (15)
+------------------------------------------
+-- INSERT MEDICINE_ACTIVE_INGR
+------------------------------------------
 INSERT INTO MEDICINE_ACTIVE_INGR (MEDICINE_ID, ACT_INGRE_ID) VALUES (1, 1);
 INSERT INTO MEDICINE_ACTIVE_INGR (MEDICINE_ID, ACT_INGRE_ID) VALUES (2, 2);
 INSERT INTO MEDICINE_ACTIVE_INGR (MEDICINE_ID, ACT_INGRE_ID) VALUES (3, 3);
@@ -541,7 +580,9 @@ INSERT INTO MEDICINE_ACTIVE_INGR (MEDICINE_ID, ACT_INGRE_ID) VALUES (13, 13);
 INSERT INTO MEDICINE_ACTIVE_INGR (MEDICINE_ID, ACT_INGRE_ID) VALUES (14, 14);
 INSERT INTO MEDICINE_ACTIVE_INGR (MEDICINE_ID, ACT_INGRE_ID) VALUES (15, 15);
 
--- MEDICINE_PHARM_FORM (15)
+------------------------------------------
+-- INSERT MEDICINE_PHARM_FORM
+------------------------------------------
 INSERT INTO MEDICINE_PHARM_FORM (MEDICINE_ID, PHARM_FORM_ID) VALUES (1, 1);
 INSERT INTO MEDICINE_PHARM_FORM (MEDICINE_ID, PHARM_FORM_ID) VALUES (2, 2);
 INSERT INTO MEDICINE_PHARM_FORM (MEDICINE_ID, PHARM_FORM_ID) VALUES (3, 3);
@@ -558,7 +599,9 @@ INSERT INTO MEDICINE_PHARM_FORM (MEDICINE_ID, PHARM_FORM_ID) VALUES (13, 13);
 INSERT INTO MEDICINE_PHARM_FORM (MEDICINE_ID, PHARM_FORM_ID) VALUES (14, 14);
 INSERT INTO MEDICINE_PHARM_FORM (MEDICINE_ID, PHARM_FORM_ID) VALUES (15, 15);
 
--- BATCH_MEDICINE (15)
+------------------------------------------
+-- INSERT BATCH_MEDICINE
+------------------------------------------
 INSERT INTO BATCH_MEDICINE (BATCH_NUMBER, CURRENT_QUANTITY, MANUFACTURING_DATE, EXPIRATION_DATE, MANUFAC_ID) VALUES ('L0001-2025', 520, DATE '2024-01-25', DATE '2025-02-08', 1);
 INSERT INTO BATCH_MEDICINE (BATCH_NUMBER, CURRENT_QUANTITY, MANUFACTURING_DATE, EXPIRATION_DATE, MANUFAC_ID) VALUES ('L0002-2024', 540, DATE '2024-02-04', DATE '2025-03-05', 2);
 INSERT INTO BATCH_MEDICINE (BATCH_NUMBER, CURRENT_QUANTITY, MANUFACTURING_DATE, EXPIRATION_DATE, MANUFAC_ID) VALUES ('L0003-2025', 560, DATE '2024-02-14', DATE '2025-03-30', 3);
@@ -575,7 +618,9 @@ INSERT INTO BATCH_MEDICINE (BATCH_NUMBER, CURRENT_QUANTITY, MANUFACTURING_DATE, 
 INSERT INTO BATCH_MEDICINE (BATCH_NUMBER, CURRENT_QUANTITY, MANUFACTURING_DATE, EXPIRATION_DATE, MANUFAC_ID) VALUES ('L0014-2024', 780, DATE '2024-06-03', DATE '2025-12-30', 14);
 INSERT INTO BATCH_MEDICINE (BATCH_NUMBER, CURRENT_QUANTITY, MANUFACTURING_DATE, EXPIRATION_DATE, MANUFAC_ID) VALUES ('L0015-2025', 800, DATE '2024-06-13', DATE '2026-01-24', 15);
 
--- MOVEMENT_TYPE (15)
+------------------------------------------
+-- INSERT MOVEMENT_TYPE
+------------------------------------------
 INSERT INTO MOVEMENT_TYPE (TYPE_NAME) VALUES ('Entrada Nota Fiscal');
 INSERT INTO MOVEMENT_TYPE (TYPE_NAME) VALUES ('Ajuste Positivo');
 INSERT INTO MOVEMENT_TYPE (TYPE_NAME) VALUES ('Ajuste Negativo');
@@ -592,7 +637,9 @@ INSERT INTO MOVEMENT_TYPE (TYPE_NAME) VALUES ('Quarentena');
 INSERT INTO MOVEMENT_TYPE (TYPE_NAME) VALUES ('Bloqueio');
 INSERT INTO MOVEMENT_TYPE (TYPE_NAME) VALUES ('Desbloqueio');
 
--- STOCK (15)
+---------------------
+-- INSERT STOCK
+---------------------
 INSERT INTO STOCK (QUANTITY, BATCH_ID, MEDICINE_ID, LOCATION_ID_STOCK) VALUES (105, 1, 1, 1);
 INSERT INTO STOCK (QUANTITY, BATCH_ID, MEDICINE_ID, LOCATION_ID_STOCK) VALUES (110, 2, 2, 2);
 INSERT INTO STOCK (QUANTITY, BATCH_ID, MEDICINE_ID, LOCATION_ID_STOCK) VALUES (115, 3, 3, 3);
@@ -609,7 +656,9 @@ INSERT INTO STOCK (QUANTITY, BATCH_ID, MEDICINE_ID, LOCATION_ID_STOCK) VALUES (1
 INSERT INTO STOCK (QUANTITY, BATCH_ID, MEDICINE_ID, LOCATION_ID_STOCK) VALUES (170, 14, 14, 14);
 INSERT INTO STOCK (QUANTITY, BATCH_ID, MEDICINE_ID, LOCATION_ID_STOCK) VALUES (175, 15, 15, 15);
 
--- MEDICINE_DISPENSE (15)
+------------------------------------------
+-- INSERT MEDICINE_DISPENSE
+------------------------------------------
 INSERT INTO MEDICINE_DISPENSE (DATE_DISPENSATION, QUANTITY_DISPENSED, DESTINATION, USER_ID) VALUES (DATE '2025-09-03', 6, 'Unidade 1', 1);
 INSERT INTO MEDICINE_DISPENSE (DATE_DISPENSATION, QUANTITY_DISPENSED, DESTINATION, USER_ID) VALUES (DATE '2025-09-05', 7, 'Unidade 2', 2);
 INSERT INTO MEDICINE_DISPENSE (DATE_DISPENSATION, QUANTITY_DISPENSED, DESTINATION, OBSERVATION, USER_ID) VALUES (DATE '2025-09-07', 8, 'Unidade 3', 'Uso hospitalar', 3);
@@ -626,7 +675,9 @@ INSERT INTO MEDICINE_DISPENSE (DATE_DISPENSATION, QUANTITY_DISPENSED, DESTINATIO
 INSERT INTO MEDICINE_DISPENSE (DATE_DISPENSATION, QUANTITY_DISPENSED, DESTINATION, USER_ID) VALUES (DATE '2025-09-29', 5, 'Unidade 4', 14);
 INSERT INTO MEDICINE_DISPENSE (DATE_DISPENSATION, QUANTITY_DISPENSED, DESTINATION, OBSERVATION, USER_ID) VALUES (DATE '2025-10-01', 6, 'Unidade 5', 'Uso hospitalar', 15);
 
--- STOCK_MOVEMENT (15)
+------------------------------------------
+-- INSERT STOCK_MOVEMENT
+------------------------------------------
 INSERT INTO STOCK_MOVEMENT (QUANTITY_DISPENSED, DATE_MOVIMENT, MOVEMENT_TYPE_ID, STOCK_ID, DISPENSATION_ID, USER_ID) VALUES (3, DATE '2025-09-06', 1, 1, 1, 1);
 INSERT INTO STOCK_MOVEMENT (QUANTITY_DISPENSED, DATE_MOVIMENT, MOVEMENT_TYPE_ID, STOCK_ID, DISPENSATION_ID, USER_ID) VALUES (4, DATE '2025-09-07', 2, 2, 2, 2);
 INSERT INTO STOCK_MOVEMENT (QUANTITY_DISPENSED, DATE_MOVIMENT, MOVEMENT_TYPE_ID, STOCK_ID, DISPENSATION_ID, USER_ID) VALUES (5, DATE '2025-09-08', 3, 3, 3, 3);
@@ -644,3 +695,217 @@ INSERT INTO STOCK_MOVEMENT (QUANTITY_DISPENSED, DATE_MOVIMENT, MOVEMENT_TYPE_ID,
 INSERT INTO STOCK_MOVEMENT (QUANTITY_DISPENSED, DATE_MOVIMENT, MOVEMENT_TYPE_ID, STOCK_ID, DISPENSATION_ID, USER_ID) VALUES (5, DATE '2025-09-20', 15, 15, 15, 15);
 
 COMMIT;
+
+
+--------------------------------------
+-- BLOCO ANÔNIMOS
+--------------------------------------
+
+SET SERVEROUTPUT ON;
+------------------------------------------------------------------------------------------------------------------
+-- LEFT JOIN
+-- listar todos os medicamentos, somando a quantidade
+------------------------------------------------------------------------------------------------------------------
+DECLARE
+  CURSOR c_left IS
+    SELECT
+      m.medicine_id,
+      m.name_medication,
+      NVL(SUM(s.quantity), 0) AS total_qty
+    FROM medicines m
+      LEFT JOIN stock s ON s.medicine_id = m.medicine_id
+    GROUP BY
+      m.medicine_id, m.name_medication
+    ORDER BY
+      total_qty ASC, m.name_medication;
+BEGIN
+  DBMS_OUTPUT.PUT_LINE(RPAD('MED_ID',6)||'  '||
+                       RPAD('MEDICAMENTO',30)||'  '||
+                       LPAD('QTD_ESTOQUE',12));
+  DBMS_OUTPUT.PUT_LINE(RPAD('-',54,'-'));
+
+  FOR r IN c_left LOOP
+    DBMS_OUTPUT.PUT_LINE(
+      LPAD(r.medicine_id,6)||'  '||
+      RPAD(r.name_medication,30)||'  '||
+      LPAD(r.total_qty,12)
+    );
+  END LOOP;
+END;
+/
+
+------------------------------------------------------------------------------------------------------------------
+-- RIGHT JOIN 
+-- listar todos os tipos de movimento, com quantidade de movimentos e soma das quantidades
+------------------------------------------------------------------------------------------------------------------
+
+DECLARE
+  CURSOR c_right IS
+    SELECT
+      mt.movement_type_id,
+      mt.type_name,
+      COUNT(sm.stock_movement_id) AS qtd_mov,
+      NVL(SUM(sm.quantity_dispensed), 0) AS total_qty_moved
+    FROM stock_movement sm
+      RIGHT JOIN movement_type mt
+        ON mt.movement_type_id = sm.movement_type_id
+    GROUP BY
+      mt.movement_type_id, mt.type_name
+    ORDER BY
+      mt.type_name;
+BEGIN
+  DBMS_OUTPUT.PUT_LINE(RPAD('TYPE_ID',7)||'  '||
+                       RPAD('TIPO_MOVIMENTO',26)||'  '||
+                       LPAD('QT_MOV',6)||'  '||
+                       LPAD('QTD_SOMADA',12));
+  DBMS_OUTPUT.PUT_LINE(RPAD('-',60,'-'));
+
+  FOR r IN c_right LOOP
+    DBMS_OUTPUT.PUT_LINE(
+      LPAD(r.movement_type_id,7)||'  '||
+      RPAD(r.type_name,26)||'  '||
+      LPAD(r.qtd_mov,6)||'  '||
+      LPAD(r.total_qty_moved,12)
+    );
+  END LOOP;
+END;
+/
+
+----------------------------------------------------------------------------
+-- INNER JOIN
+-- estoque total por Local de Estoque e Categoria do medicamento
+----------------------------------------------------------------------------
+
+DECLARE
+  CURSOR c_inner IS
+    SELECT
+      ls.location_id_stock,
+      ls.name_location,
+      cm.category,
+      SUM(s.quantity) AS total_qty
+    FROM stock s
+      INNER JOIN location_stock ls   ON ls.location_id_stock = s.location_id_stock
+      INNER JOIN medicines m         ON m.medicine_id        = s.medicine_id
+      INNER JOIN category_medicine cm ON cm.category_med_id   = m.category_med_id
+    GROUP BY
+      ls.location_id_stock, ls.name_location, cm.category
+    ORDER BY
+      ls.name_location, cm.category;
+BEGIN
+  DBMS_OUTPUT.PUT_LINE(RPAD('LOC_ID',6)||'  '||
+                       RPAD('LOCAL',22)||'  '||
+                       RPAD('CATEGORIA',22)||'  '||
+                       LPAD('QTD',6));
+  DBMS_OUTPUT.PUT_LINE(RPAD('-',63,'-'));
+
+  FOR r IN c_inner LOOP
+    DBMS_OUTPUT.PUT_LINE(
+      LPAD(r.location_id_stock,6)||'  '||
+      RPAD(r.name_location,22)||'  '||
+      RPAD(r.category,22)||'  '||
+      LPAD(r.total_qty,6)
+    );
+  END LOOP;
+END;
+/
+
+----------------------------------------------------------------------------
+-- ajuste de estoque por medicamento + lote + local
+----------------------------------------------------------------------------
+
+DECLARE
+
+  v_medicine_id        STOCK.MEDICINE_ID%TYPE       := 2;
+  v_batch_id           STOCK.BATCH_ID%TYPE          := 2;
+  v_location_id_stock  STOCK.LOCATION_ID_STOCK%TYPE := 2;
+  v_delta              NUMBER := -7; 
+  v_exists   NUMBER;
+  v_current  STOCK.QUANTITY%TYPE;
+  v_new      STOCK.QUANTITY%TYPE;
+BEGIN
+  SELECT COUNT(*)
+    INTO v_exists
+    FROM STOCK
+   WHERE MEDICINE_ID = v_medicine_id
+     AND BATCH_ID = v_batch_id
+     AND LOCATION_ID_STOCK = v_location_id_stock;
+
+  IF v_exists = 0 THEN
+    DBMS_OUTPUT.PUT_LINE('Estoque não encontrado para os parâmetros informados.');
+    RETURN;
+  END IF;
+
+  SELECT QUANTITY
+    INTO v_current
+    FROM STOCK
+   WHERE MEDICINE_ID = v_medicine_id
+     AND BATCH_ID = v_batch_id
+     AND LOCATION_ID_STOCK = v_location_id_stock;
+
+  v_new := v_current + v_delta;
+
+  IF v_new < 0 THEN
+    DBMS_OUTPUT.PUT_LINE('Operação cancelada: quantidade ficaria negativa (atual='||v_current||', delta='||v_delta||').');
+    ROLLBACK;
+  ELSE
+    UPDATE STOCK
+       SET QUANTITY = v_new
+     WHERE MEDICINE_ID = v_medicine_id
+       AND BATCH_ID = v_batch_id
+       AND LOCATION_ID_STOCK = v_location_id_stock;
+
+    DBMS_OUTPUT.PUT_LINE('UPDATE ok. Linhas afetadas: '||SQL%ROWCOUNT||
+                         ' | Quantidade: '||v_current||' -> '||v_new);
+    COMMIT;
+  END IF;
+END;
+/
+
+
+----------------------------------------------------------------------------
+-- remove vínculo de forma farmacêutica de um medicamento
+----------------------------------------------------------------------------
+
+DECLARE
+  v_medicine_id   MEDICINE_PHARM_FORM.MEDICINE_ID%TYPE := 2;
+  v_pharm_form_id MEDICINE_PHARM_FORM.PHARM_FORM_ID%TYPE := 2;
+
+  v_exists_pair NUMBER;
+  v_med_exists  NUMBER;
+  v_pf_exists   NUMBER;
+BEGIN
+  SELECT COUNT(*) INTO v_med_exists FROM MEDICINES WHERE MEDICINE_ID = v_medicine_id;
+  SELECT COUNT(*) INTO v_pf_exists  FROM PHARMACEUTICAL_FORM WHERE PHARM_FORM_ID = v_pharm_form_id;
+
+  IF v_med_exists = 0 THEN
+    DBMS_OUTPUT.PUT_LINE('Medicamento não existe: ID='||v_medicine_id);
+    RETURN;
+  END IF;
+
+  IF v_pf_exists = 0 THEN
+    DBMS_OUTPUT.PUT_LINE('Forma farmacêutica não existe: ID='||v_pharm_form_id);
+    RETURN;
+  END IF;
+
+  SELECT COUNT(*)
+    INTO v_exists_pair
+    FROM MEDICINE_PHARM_FORM
+   WHERE MEDICINE_ID = v_medicine_id
+     AND PHARM_FORM_ID = v_pharm_form_id;
+
+  IF v_exists_pair = 0 THEN
+    DBMS_OUTPUT.PUT_LINE('Nenhum vínculo para remover (MEDICINE_ID='||v_medicine_id||
+                         ', PHARM_FORM_ID='||v_pharm_form_id||').');
+    RETURN;
+  END IF;
+
+  DELETE FROM MEDICINE_PHARM_FORM
+   WHERE MEDICINE_ID = v_medicine_id
+     AND PHARM_FORM_ID = v_pharm_form_id;
+
+  DBMS_OUTPUT.PUT_LINE('DELETE ok. Linhas afetadas: '||SQL%ROWCOUNT||
+                       ' | Removido vínculo MEDICINE_ID='||v_medicine_id||
+                       ' e PHARM_FORM_ID='||v_pharm_form_id||'.');
+  COMMIT;
+END;
+/

@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="POS_USER_ID" id="0FD7761B-F8D3-1CC4-E91F-C4C0272631BF">
+<Attribute name="ROLE_USER_ID" id="0FD7761B-F8D3-1CC4-E91F-C4C0272631BF">
 <createdBy>Cleyton</createdBy>
 <createdTime>2025-10-03 21:11:04 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
