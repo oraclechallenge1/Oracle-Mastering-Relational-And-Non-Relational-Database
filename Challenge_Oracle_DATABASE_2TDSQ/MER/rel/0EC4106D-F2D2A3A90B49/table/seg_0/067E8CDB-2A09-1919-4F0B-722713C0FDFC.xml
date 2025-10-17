@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="067E8CDB-2A09-1919-4F0B-722713C0FDFC" name="LOCATION_STOCK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>6DC281D2-B003-6A5A-039B-4F6784E81ECD</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION_ID_STOCK" id="457A2B77-02E7-A428-98CE-FE2BEDD900DC">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>273BE1B7-2A06-03DD-7545-6FCFE5B5DFAC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME_LOCATION" id="EFD9843E-33E8-4E29-4C0C-28046E197F14">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>B237969C-6059-CB6A-5FD3-94B9439E799B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_STOCK_NAME" id="90C96ADB-8759-D32A-7572-7D40271C452E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>9F41BCBB-CA5A-5E75-1957-C633A2A2996B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS_STOCK_ADDRESS_ID_STOCK" id="62551091-E142-DC63-04CA-4E5E7F00B87E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>1D5276CA-CFFF-5B90-CC5A-3C8E2719FE96</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF84D78B-001A-E1F8-A27D-40CF64CF64AA" referredColumn="D874F5A8-65B5-56FD-3B7C-5E49A5E8B78B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC218C4F-810A-EBD2-D217-9E7F9F2DA37E" name="LOCATION_STOCK_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>9420B66A-8347-521A-F992-86829B8D5BEC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="457A2B77-02E7-A428-98CE-FE2BEDD900DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="545BDDE2-1447-C973-DEB0-7B4C2F8AAFF8" name="LOCATION_STOCK__IDX">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F5988312-532F-CD6D-4C0D-020BA09A30D6</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="62551091-E142-DC63-04CA-4E5E7F00B87E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F0DC5D8-2BB8-3FB3-81C0-9E9AD654EE63" name="LOCATION_STOCK_ADDRESS_STOCK_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>F5988312-532F-CD6D-4C0D-020BA09A30D6</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62551091-E142-DC63-04CA-4E5E7F00B87E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

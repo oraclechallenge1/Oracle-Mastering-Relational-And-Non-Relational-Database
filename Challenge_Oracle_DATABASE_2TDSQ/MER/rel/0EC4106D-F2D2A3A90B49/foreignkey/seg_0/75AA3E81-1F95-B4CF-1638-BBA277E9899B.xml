@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="75AA3E81-1F95-B4CF-1638-BBA277E9899B" containerWithKeyObject="2919B560-21C0-E56C-4C7A-73CCCF49E2C1" localFKIndex="F572716B-D201-F8FF-461F-6E0DE89BF9A4" name="MEDICINE_DISPENSE_BATCH_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>5A9DFA4F-703B-E7CD-2D0E-C5B0C8EE702B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<referredTableLongName>BATCH_MEDICINE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37149DAB-DFE7-914D-1433-E948267ADAFB</referredTableID>
+<keyObject>197D28FE-5B1F-EA3B-9EFA-9812E2D86C00</keyObject>
+<referredKeyID>197D28FE-5B1F-EA3B-9EFA-9812E2D86C00</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BATCH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

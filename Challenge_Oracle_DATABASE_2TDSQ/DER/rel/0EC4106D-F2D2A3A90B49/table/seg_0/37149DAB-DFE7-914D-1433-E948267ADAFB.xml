@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37149DAB-DFE7-914D-1433-E948267ADAFB" name="BATCH_MEDICINE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>7DCBA5FE-75F2-CEBD-7AD6-9429CDBAB5E1</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BATCH_ID" id="39E32C52-7C23-3547-862F-D80809A767B3">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>A6E3365D-4791-63E5-1AEA-FD8144710C54</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATCH_NUMBER" id="387D5992-DC16-BD02-1793-0A06E170828A">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>E55835A7-57B9-441F-301C-B0846392C0D3</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENT_QUANTITY" id="1048719B-8F4E-097D-1CC9-72FFA800CA38">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>141A9C65-740B-FEFB-16AA-B39B3E81508E</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANUFACTURING_DATE" id="0371A8EF-CBDA-DD58-1629-D835368A0BD3">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>F615043C-C7A8-AE83-53A3-FF58EBF7403E</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPIRATION_DATE" id="288FF14A-A332-4CEA-5B97-E50BB8B94B10">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>D73C11C7-238A-432F-AD1D-D0111C94FDE2</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANUFACTURER_MANUFAC_ID" id="DECB7A7D-FFF5-B48A-2A9D-788A9F87790B">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>2CCB8F2F-EE8D-5196-84AF-68483A8275D7</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C631AA70-C930-47A3-0331-FDCE5EDEF9ED" referredColumn="470D1ACF-2589-42A6-686F-A0C5AA5A4A68"/>
+</associations>
+</Column>
+<Column name="MANUFACTURER_MANUFAC_ID2" id="D1A4B249-9A0B-0EDA-E988-A576228451EC">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 21:49:12 UTC</createdTime>
+<generatorID>A436C6CC-7A0F-F471-F9E1-BAF9A80E7D5E</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99851F8B-7521-6237-DFC0-6444D5230009" referredColumn="470D1ACF-2589-42A6-686F-A0C5AA5A4A68"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="197D28FE-5B1F-EA3B-9EFA-9812E2D86C00" name="BATCH_MEDICINE_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>6FACC083-5E34-EE2E-6D9A-FEA8E05C382F</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39E32C52-7C23-3547-862F-D80809A767B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A73B5A06-A1BB-3ADE-7998-6BEC62D92307" name="BATCH_MEDICINE__IDX">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EEF37733-3E37-4A97-9C2D-74CA0EB750C5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DECB7A7D-FFF5-B48A-2A9D-788A9F87790B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A12052F6-CC5F-3B85-A0B3-F1EA253FD7DA" name="BATCH_MEDICINE_MANUFACTURER_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>EEF37733-3E37-4A97-9C2D-74CA0EB750C5</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DECB7A7D-FFF5-B48A-2A9D-788A9F87790B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1AAEDF0-676F-3A69-B7EA-D03921708759" name="BATCH_MEDICINE_MANUFACTURER_FKv2">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 21:49:12 UTC</createdTime>
+<generatorID>2B22E276-10EE-6E20-252E-4A54CA1B0DEB</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1A4B249-9A0B-0EDA-E988-A576228451EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

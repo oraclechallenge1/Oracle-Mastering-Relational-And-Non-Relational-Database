@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7DCBA5FE-75F2-CEBD-7AD6-9429CDBAB5E1" name="BATCH_MEDICINE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:20:45 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BATCH_ID" id="A6E3365D-4791-63E5-1AEA-FD8144710C54">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:20:57 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BATCH_NUMBER" id="E55835A7-57B9-441F-301C-B0846392C0D3">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:21:23 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CURRENT_QUANTITY" id="141A9C65-740B-FEFB-16AA-B39B3E81508E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:06:23 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MANUFACTURING_DATE" id="F615043C-C7A8-AE83-53A3-FF58EBF7403E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:26:18 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXPIRATION_DATE" id="D73C11C7-238A-432F-AD1D-D0111C94FDE2">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:27:19 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MANUFAC_ID" id="A436C6CC-7A0F-F471-F9E1-BAF9A80E7D5E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 21:46:56 UTC</createdTime>
+<generatorID>2B22E276-10EE-6E20-252E-4A54CA1B0DEB</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>A87C1C44-7D0C-F055-A4CF-E8CD24276E56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FACC083-5E34-EE2E-6D9A-FEA8E05C382F" name="STOCK_BATCH PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:21:21 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6E3365D-4791-63E5-1AEA-FD8144710C54</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

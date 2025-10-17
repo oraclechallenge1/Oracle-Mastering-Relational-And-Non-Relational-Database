@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B893C0E-50B0-3A74-E461-B0656D56AAC6" name="ACTIVE_INGREDIENT">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:29:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ACT_INGRE_ID" id="B2101FE0-F7CE-3954-EA31-F4D5AC2490B4">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:29:33 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACT_INGREDIENT" id="A1A8D7EB-F9C3-D00A-54DC-F664112B4BAA">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:29:51 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B6AD55E1-C6AC-BDEF-37C2-3F8CE16DC2AA" name="ACTIVE_INGREDIENT PK">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:29:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B2101FE0-F7CE-3954-EA31-F4D5AC2490B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

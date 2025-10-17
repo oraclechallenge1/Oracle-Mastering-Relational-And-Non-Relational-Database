@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A9CEFDF-4766-1EB2-AB92-7652DB9C16F1" name="MEDICINE_ACTIVE_INGR">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>D982A89B-E3B6-53A4-A089-56102A55583C</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MED_ACTIVE_INGR_ID" id="AB1897FC-450C-BC9B-A18A-F588DC7FCE69">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>ED1C9920-EB59-FAC8-398E-DF4506DDE987</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDICINES_MEDICINE_ID" id="39A77F81-63E4-395F-D3A8-A35E451FB46C">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>F228B508-6B43-2BCE-764F-490AC5A5A738</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BABB4B23-A2DC-E7B2-FD24-94DDF0001049" referredColumn="45CA5D22-217D-C2D0-52C5-4EDC83DF5B12"/>
+</associations>
+</Column>
+<Column name="ACTIVE_INGREDIENT_ACT_INGRE_ID" id="2696CDE5-79B5-1FA3-F8A0-1E23E33B5574">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>546B5746-CC87-0D3F-EE7A-24B014923982</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCED3154-BDBE-6B6B-F30C-E44D180D09B6" referredColumn="FE59A5ED-EF0C-1F6F-9163-89C4B763173D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B98F3A0-885B-20B0-7E09-7A895D420B9F" name="MEDICINE_ACTIVE_INGR_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>697551FA-BBA5-5105-9755-746147A26224</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB1897FC-450C-BC9B-A18A-F588DC7FCE69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50127896-117A-3E4D-A91E-59E96BB99FB8" name="MEDICINE_ACTIVE_INGR_MEDICINES_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>B1A7A8BD-1E0A-20A0-9E20-723D5946F989</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39A77F81-63E4-395F-D3A8-A35E451FB46C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82D32C31-DE25-4BB9-84FF-8533D3DE04B0" name="MEDICINE_ACTIVE_INGR_ACTIVE_INGREDIENT_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>C0BB06B4-E025-A0E1-9F9C-CC1E0A6C93C3</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2696CDE5-79B5-1FA3-F8A0-1E23E33B5574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

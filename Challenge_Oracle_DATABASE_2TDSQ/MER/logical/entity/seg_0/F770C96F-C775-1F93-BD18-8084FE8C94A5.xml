@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F770C96F-C775-1F93-BD18-8084FE8C94A5" name="STOCK_MOVEMENT">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:00:02 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STOCK_MOVEMENT_ID" id="E6FAB06F-2A66-FDD3-A586-6D70402647AE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:00:13 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTITY_DISPENSED" id="8B0A4BE0-1E78-D3FB-0CE3-76B7CC3B22AB">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:00:25 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_MOVIMENT" id="7240423C-EA59-D793-0150-79562DF69533">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:00:52 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MOVEMENT_TYPE_ID" id="D11A37AA-BC48-87AD-1592-5CEE32727A86">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:02:57 UTC</createdTime>
+<generatorID>29608ED5-90C9-4D80-3F93-CAB851B9D45C</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>189ADDB2-991B-A53D-D6B8-309E9763450E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STOCK_ID" id="FBAE6B9B-350B-8ACF-8A8F-3D9D58FC3F7B">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:04:42 UTC</createdTime>
+<generatorID>57A2647E-FE6F-7422-90BB-8E2FC2A0C799</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>637C00A5-05BE-8757-D9A6-9FF0470A98EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISPENSATION_ID" id="9BC4359D-84BC-3EF1-A6D2-0AF7CB9E03C2">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:05:19 UTC</createdTime>
+<generatorID>1E9D9AAC-0572-36BD-5568-B5D5A5C53301</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>EC98F33E-9BF6-B400-2FA7-A5E1DF8296AC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USER_ID" id="CFCA32E0-672D-F4E4-55E3-A562425B3097">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:08:12 UTC</createdTime>
+<generatorID>1F48AB78-D4BF-0CE6-0E8A-CFCAC83E0225</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>D15700D6-ADAB-716C-9B99-C6015499520F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB00C1DE-7249-1BD4-6BD6-68F4AE038546" name="STOCK_MOVEMENT PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:00:23 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6FAB06F-2A66-FDD3-A586-6D70402647AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="785493D8-84B5-1B76-3140-798AFF41BB23" name="CONTACT_USER">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>2790AFD6-2FD0-8AE8-02FD-8ECAAC4E1D92</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTACT_USER_ID" id="5DDF7447-735E-C4FA-B8AE-3D5C55D105CD">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>6E6CB46C-EC6E-9B1B-1780-111A599EDF93</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL_USER" id="464617AF-3B11-76D1-2473-088B2B551838">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>7D060C55-06F6-664C-508F-A9931B543628</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER_USER" id="76D29B3C-3075-98C2-55FF-7482EE947BA6">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>DA662D88-D750-12BA-8BC8-15658BA01613</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFA0442F-D876-13A6-2392-E8BC58DB72D8" name="CONTACT_USER_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>E1ED243C-3E22-1007-3F23-7EE26B86D601</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DDF7447-735E-C4FA-B8AE-3D5C55D105CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="627B76F3-F51F-3173-6EDA-0F346223D62A" name="CONTACT_USER_PHONE_NUMBER_USER_UN">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>4CB60D6E-0609-3FD4-2D70-0365213D0DB8</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D29B3C-3075-98C2-55FF-7482EE947BA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8711AD05-A83A-ABF7-97A5-A132421DFC26" name="CONTACT_USER_EMAIL_USER_UN">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>5FF02984-4A4C-F7C6-49EB-7BB0EE836383</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="464617AF-3B11-76D1-2473-088B2B551838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2790AFD6-2FD0-8AE8-02FD-8ECAAC4E1D92" name="CONTACT_USER">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CONTACT_USER_ID" id="6E6CB46C-EC6E-9B1B-1780-111A599EDF93">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL_USER" id="7D060C55-06F6-664C-508F-A9931B543628">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PHONE_NUMBER_USER" id="DA662D88-D750-12BA-8BC8-15658BA01613">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E1ED243C-3E22-1007-3F23-7EE26B86D601" name="CONTACT PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E6CB46C-EC6E-9B1B-1780-111A599EDF93</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4CB60D6E-0609-3FD4-2D70-0365213D0DB8" name="PHONE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>DA662D88-D750-12BA-8BC8-15658BA01613</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5FF02984-4A4C-F7C6-49EB-7BB0EE836383" name="EMAIL">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 18:29:42 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7D060C55-06F6-664C-508F-A9931B543628</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

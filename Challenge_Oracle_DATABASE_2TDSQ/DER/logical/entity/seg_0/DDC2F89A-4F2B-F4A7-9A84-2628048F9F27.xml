@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDC2F89A-4F2B-F4A7-9A84-2628048F9F27" name="MEDICINE_DISPENSE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:51:20 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DISPENSATION_ID" id="EC98F33E-9BF6-B400-2FA7-A5E1DF8296AC">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:51:23 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_DISPENSATION" id="B98A6EED-9B50-80E0-43AF-F93D234ADE37">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:51:37 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTITY_DISPENSED" id="796AB2DD-5171-1BC6-C47B-21AF0BD2B9B0">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:52:04 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESTINATION" id="7774278A-CDD1-BD87-C14C-FAE73966C142">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:52:21 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OBSERVATION" id="8A4B0E74-24BA-F9AB-D65C-5327F29F2D6E">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:53:10 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USER_ID" id="4B8CFA6B-24A1-4A6D-E0F6-3E1B5966104A">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:56:06 UTC</createdTime>
+<generatorID>DC3D89B3-047C-23DB-2795-D9C74ED18863</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>D15700D6-ADAB-716C-9B99-C6015499520F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E42BF5CD-6BDE-8307-24B0-0A3DBEB0FE0B" name="DISPENSATION PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 19:51:35 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EC98F33E-9BF6-B400-2FA7-A5E1DF8296AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

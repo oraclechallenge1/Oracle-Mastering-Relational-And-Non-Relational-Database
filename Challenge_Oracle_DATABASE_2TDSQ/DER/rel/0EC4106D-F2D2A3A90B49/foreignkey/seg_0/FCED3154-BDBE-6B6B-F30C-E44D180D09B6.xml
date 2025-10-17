@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FCED3154-BDBE-6B6B-F30C-E44D180D09B6" containerWithKeyObject="9A9CEFDF-4766-1EB2-AB92-7652DB9C16F1" localFKIndex="82D32C31-DE25-4BB9-84FF-8533D3DE04B0" name="MEDICINE_ACTIVE_INGR_ACTIVE_INGREDIENT_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-11 00:25:55 UTC</createdTime>
+<generatorID>C0BB06B4-E025-A0E1-9F9C-CC1E0A6C93C3</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<referredTableLongName>ACTIVE_INGREDIENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A8157DE-4313-853E-604C-43FD7DC6981D</referredTableID>
+<keyObject>E4653DF8-9D25-6865-D41B-1D53CFC8888E</keyObject>
+<referredKeyID>E4653DF8-9D25-6865-D41B-1D53CFC8888E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ACT_INGRE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,252 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2919B560-21C0-E56C-4C7A-73CCCF49E2C1" name="MEDICINE_DISPENSE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>DDC2F89A-4F2B-F4A7-9A84-2628048F9F27</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DISPENSATION_ID" id="2910AD8D-BA7D-4F8D-114E-F4E00359A513">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>EC98F33E-9BF6-B400-2FA7-A5E1DF8296AC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DISPENSATION" id="69534D46-EC1E-2636-54CE-B88A16D2714D">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>B98A6EED-9B50-80E0-43AF-F93D234ADE37</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY_DISPENSED" id="A7276696-29C0-B838-57DF-06121089C905">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>796AB2DD-5171-1BC6-C47B-21AF0BD2B9B0</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESTINATION" id="FB5457C0-7F6F-4538-48FB-728B196DED8D">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>7774278A-CDD1-BD87-C14C-FAE73966C142</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVATION" id="7C7CDB82-A834-FDEE-1AB0-7AC3F2B9788F">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>8A4B0E74-24BA-F9AB-D65C-5327F29F2D6E</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVEMENT_TYPE_MOVEMENT_TYPE_ID" id="DED1631E-8FD0-9528-A56E-847F390893EA">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>54FBB588-CA8E-75F0-E6C4-C7753F2EF487</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E51F3BA-BCC8-C107-F6D3-BBBE2BBDF9FB" referredColumn="7BE4325C-FB7E-CDD9-35A2-FB57EC4F4C33"/>
+</associations>
+</Column>
+<Column name="USERS_SYS_USER_ID" id="6DC2D3C7-84C8-7149-F5C3-BB1DA077AE16">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>4B8CFA6B-24A1-4A6D-E0F6-3E1B5966104A</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03B3CA08-508F-7A93-1E14-5B0C4F3DD409" referredColumn="6B2BFFB8-F5C8-E0F4-03F4-89A8D79BA78C"/>
+</associations>
+</Column>
+<Column name="MEDICINES_MEDICINE_ID" id="3E531481-71FD-EB44-609F-4AC88E58E85C">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>A4638C67-A5F0-7537-3A94-B59CDD0156CC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE9CDCEA-389B-E428-E2C7-09007BFAFF64" referredColumn="45CA5D22-217D-C2D0-52C5-4EDC83DF5B12"/>
+</associations>
+</Column>
+<Column name="BATCH_BATCH_ID" id="7855F248-27E2-9174-E5CE-5FDC92C3E6DB">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>3C009CFD-4E39-1A2A-DF70-2DF01547A7A3</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75AA3E81-1F95-B4CF-1638-BBA277E9899B" referredColumn="39E32C52-7C23-3547-862F-D80809A767B3"/>
+</associations>
+</Column>
+<Column name="MOVEMENT_TYPE_MOVEMENT_TYPE_ID1" id="7F14D581-8B8F-EDEA-B3B0-B143687B87BA">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>FB118D6F-C882-FF98-13B4-DE6087F25FA4</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A264543F-E34A-DF16-AE2D-735BC377E70D" referredColumn="7BE4325C-FB7E-CDD9-35A2-FB57EC4F4C33"/>
+</associations>
+</Column>
+<Column name="STOCK_STOCK_ID" id="14BFFA13-66ED-C300-3A5D-856EDE2976EE">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>A5BCC87D-FDF8-98D8-1FD0-826F30DF94FF</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE4D7944-2163-CE87-858B-159BEE041F62" referredColumn="863D21D4-E519-695A-A365-5D3C5341FDF8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A284E9E7-8AD6-36F8-E702-9EA70B004B5B" name="MEDICINE_DISPENSE_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>E42BF5CD-6BDE-8307-24B0-0A3DBEB0FE0B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2910AD8D-BA7D-4F8D-114E-F4E00359A513"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="290763B0-3BE0-6470-F91F-35B4C4405E89" name="MEDICINE_DISPENSE__IDX">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>81AE377E-B203-3C18-ABCD-2906FE1A4DB5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DED1631E-8FD0-9528-A56E-847F390893EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="017C7A93-7CFC-5C84-139D-1BB1809C4248" name="MEDICINE_DISPENSE_MOVEMENT_TYPE_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>81AE377E-B203-3C18-ABCD-2906FE1A4DB5</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DED1631E-8FD0-9528-A56E-847F390893EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3EED8B8-8705-F190-DF6A-372E7F545377" name="MEDICINE_DISPENSE_USERS_SYS_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>DC3D89B3-047C-23DB-2795-D9C74ED18863</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DC2D3C7-84C8-7149-F5C3-BB1DA077AE16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F97E079-E98A-B475-CDA5-83D107E8D640" name="MEDICINE_DISPENSE_MEDICINES_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>42A0EF2F-256D-42B6-6959-9818DB9C6D32</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E531481-71FD-EB44-609F-4AC88E58E85C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F572716B-D201-F8FF-461F-6E0DE89BF9A4" name="MEDICINE_DISPENSE_BATCH_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>5A9DFA4F-703B-E7CD-2D0E-C5B0C8EE702B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7855F248-27E2-9174-E5CE-5FDC92C3E6DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA7FC874-4292-6791-834B-2456EC87C0C1" name="MEDICINE_DISPENSE_MOVEMENT_TYPE_FKv1">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>852064D4-6119-A7DD-1A9F-52832A532CF1</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F14D581-8B8F-EDEA-B3B0-B143687B87BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54927B60-8268-527C-F76B-09C868543B20" name="MEDICINE_DISPENSE_STOCK_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>128F895E-3E1C-817D-D8FE-8EF345467A9D</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14BFFA13-66ED-C300-3A5D-856EDE2976EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

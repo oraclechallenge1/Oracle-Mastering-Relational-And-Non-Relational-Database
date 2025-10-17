@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE9AE8FC-1841-CEDE-8958-570E302120A0" name="STOCK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>67E850A4-DA51-0F0A-8E1B-E5A94DD38A61</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STOCK_ID" id="863D21D4-E519-695A-A365-5D3C5341FDF8">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>637C00A5-05BE-8757-D9A6-9FF0470A98EC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="5BE67F35-C732-9D40-BEE7-E31B69CDEAD0">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>FF896115-0ECC-D007-6E33-C953CA1B6B31</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATCH_MEDICINE_BATCH_ID" id="40062993-FF60-CF33-5E32-11CBFFFE4E6F">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>510AC96B-8FBD-FE5B-1298-A02706761D9D</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DFDBBCE-85F6-A709-8D28-1D9530D53A66" referredColumn="39E32C52-7C23-3547-862F-D80809A767B3"/>
+</associations>
+</Column>
+<Column name="MEDICINES_MEDICINE_ID" id="F16CE4E9-9BBF-064B-E2B8-33E7A61850D1">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>A7FF51EB-811B-A38B-51D0-D86B40E50E66</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3894514B-E6A8-6D28-F0B2-10D59C04B099" referredColumn="45CA5D22-217D-C2D0-52C5-4EDC83DF5B12"/>
+</associations>
+</Column>
+<Column name="LOCATION_STOCK_LOCATION_ID_STOCK" id="9F3ADAF0-8D09-6321-83E6-0BCC77F20DE6">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>DB7B0278-D43A-67D7-57FD-C92B3F01E102</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7F07EFE-BCC4-3D92-C885-D08C8400EA78" referredColumn="457A2B77-02E7-A428-98CE-FE2BEDD900DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D0FED0E-2E7F-6303-3361-1F62A338EE31" name="STOCK_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>5B5A15D5-D885-F58C-C1BE-FA784547C130</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="863D21D4-E519-695A-A365-5D3C5341FDF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39166800-A5B9-DA49-6A63-F32A9EA31D10" name="STOCK__IDX">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4451E46F-EA71-1E5B-89D3-FE16313F4DCE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="40062993-FF60-CF33-5E32-11CBFFFE4E6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B33D9398-D593-2595-23FC-BAF2A13F681F" name="STOCK_BATCH_MEDICINE_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>4451E46F-EA71-1E5B-89D3-FE16313F4DCE</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40062993-FF60-CF33-5E32-11CBFFFE4E6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61615026-7099-8027-EF47-91ED0715DDFF" name="STOCK_MEDICINES_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>C5BF427D-416B-4FF5-EF41-5E0493057BCE</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F16CE4E9-9BBF-064B-E2B8-33E7A61850D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D615E6A-8CB6-E2AF-D19A-A74BDC324AA7" name="STOCK_LOCATION_STOCK_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>1A89E10C-8918-DF08-E5E1-563EBB9EB4EF</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F3ADAF0-8D09-6321-83E6-0BCC77F20DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

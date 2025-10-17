@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9238102D-16BD-E2E6-6D74-5BDC401C366B" name="ADDRESS_MANUFACTURER">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:42:13 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ADDRESS_ID_MANUFACTURER" id="8E80D6A7-4066-7142-084B-28180BF78532">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:42:43 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMPLEMENT" id="EBF225F5-E65E-9DC4-0B6D-9F4196B6A564">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:44:14 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMBER_MANU" id="99AE1064-9DFA-16DB-F084-AC02F746E7C2">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:44:31 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADRESS_DESCRIPTION" id="AEC95B8C-67BB-AC3C-F92C-271B5FFC5E6A">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:46:08 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CEP" id="79C01C7D-BCAC-129E-2E4B-124BE399E81C">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:47:03 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NEIGH_ID" id="48F4B1F8-1BA9-876B-2E2B-218E6456E2E1">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:55:31 UTC</createdTime>
+<generatorID>AD707AD1-57CE-749F-EB63-1B68DF827BE0</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<referedAttribute>CB70C073-4AA2-992E-7560-8574F5BB841A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4147D95-396D-84D3-EDCD-9CE2F8F3CBA7" name="ADDRESS PK">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 20:42:53 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8E80D6A7-4066-7142-084B-28180BF78532</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

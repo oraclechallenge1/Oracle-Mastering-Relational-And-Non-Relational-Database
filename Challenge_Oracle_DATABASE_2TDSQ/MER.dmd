@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MER" id="ECD3DFF7-24CF-8A62-B3B7-5A9F7DDA5A51" version="3.5">
+<createdBy>Cleyton</createdBy>
+<createdTime>2025-10-03 19:43:13 UTC</createdTime>
+<ownerDesignName>alteracoes_banco</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ECD3DFF7-24CF-8A62-B3B7-5A9F7DDA5A51</designId>
+</OSDM_Design>

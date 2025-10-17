@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64372230-49B7-8259-862F-02D8501AE25C" name="MEDICINES">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>CD7CE97F-A87A-0D64-8A88-01409DBAC614</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDICINE_ID" id="45CA5D22-217D-C2D0-52C5-4EDC83DF5B12">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>6DED2FEC-341C-5BB1-7BE9-5E1AEC79355D</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME_MEDICATION" id="4D2A0C16-A824-4C11-AFD0-6A4771D858CB">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>BB898683-3F9C-BD56-4ED6-93D4FCB2D2C4</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_MED" id="225BF64A-EF32-9771-6004-82FA9999FF61">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>0D2FE68D-03B9-4A18-F88F-9AEE0E7261C0</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_MEDICINE_CATEGORY_MED_ID" id="AFBFF4F0-BC7D-6C97-6124-70417F1F1C04">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>A356060A-D119-6585-CB69-81092AEE9EA5</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4CDF30B-C83F-9D3F-9BCE-B356E46DC3F5" referredColumn="66C9EC7D-B72A-B4A4-53FC-0E38720F3959"/>
+</associations>
+</Column>
+<Column name="UNIT_MEASURE_UNIT_MEA_ID" id="E7E91F7A-F841-E35D-CE35-27F417D6770C">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>BAF8012A-E8E6-DF2E-60A8-DD6C1830D438</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97DBC1BA-A54C-9E21-E666-CD2C6BE32B1A" referredColumn="C70E80DD-F037-6FFA-E352-093F55D3863F"/>
+</associations>
+</Column>
+<Column name="PHARMACEUTICAL_FORM_PHARM_FORM_ID" id="05277E06-1C60-2FA8-7EE2-44EB3199D0F6">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>5C343D26-DFD4-3AD7-D29F-B042B9252DDE</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4A4B046-D04C-3832-9B77-BD9B8B6D8F37" referredColumn="7E43955A-D04E-432D-6148-8B2048C0A7AD"/>
+</associations>
+</Column>
+<Column name="ACTIVE_INGREDIENT_ACT_INGRE_ID" id="9647828B-2AFE-74B4-543C-8581D3997C1C">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>317270B7-F5EE-6F7F-DBB0-AFB7DBAFC17F</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D5D941E-C271-DBCB-CC32-886DCEAFD452" referredColumn="FE59A5ED-EF0C-1F6F-9163-89C4B763173D"/>
+</associations>
+</Column>
+<Column name="MANUFACTURER_MANUFAC_ID" id="E9D01C19-FB4D-B243-9EED-40D6FE96D2FB">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>B13D739A-B673-9AF2-6362-594991B771B2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DD1BAC2-01AA-F214-A192-2B6D5C532363" referredColumn="470D1ACF-2589-42A6-686F-A0C5AA5A4A68"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5802040-962F-5D02-1B85-855392262E66" name="MEDICINES_PK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>9DAC43F9-D8E5-E434-122A-E66ADACC4D7D</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45CA5D22-217D-C2D0-52C5-4EDC83DF5B12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55210627-6084-EBA7-A49C-2CBA8F420F03" name="MEDICINES_CATEGORY_MEDICINE_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>6A05741F-FFBF-410B-1464-ACDEE7B143DA</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFBFF4F0-BC7D-6C97-6124-70417F1F1C04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0E4F262-7D4B-2462-BF76-E9F19BF6C373" name="MEDICINES_UNIT_MEASURE_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>9B171E19-D8B8-48E0-E0B3-B22DFFDE81E1</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7E91F7A-F841-E35D-CE35-27F417D6770C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2754F5B-7E18-EC2D-E659-B0CC63C8B68C" name="MEDICINES_PHARMACEUTICAL_FORM_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>FC9A8E02-3181-6211-AA95-AAE247A7CFCD</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05277E06-1C60-2FA8-7EE2-44EB3199D0F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3851F15C-5C21-8A29-EFFC-2880B71A676F" name="MEDICINES_ACTIVE_INGREDIENT_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>D9EC85ED-E024-04D7-FCDC-28E0383BF2A4</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9647828B-2AFE-74B4-543C-8581D3997C1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53E2D3C1-D3E6-AD05-0BC4-B138B6F6F9C5" name="MEDICINES_MANUFACTURER_FK">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-04 20:17:27 UTC</createdTime>
+<generatorID>08827B12-1A47-2BF3-FBB6-B6E123526C2E</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9D01C19-FB4D-B243-9EED-40D6FE96D2FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

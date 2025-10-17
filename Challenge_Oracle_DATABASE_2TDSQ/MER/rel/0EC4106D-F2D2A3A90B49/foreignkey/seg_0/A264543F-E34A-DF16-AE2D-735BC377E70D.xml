@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A264543F-E34A-DF16-AE2D-735BC377E70D" containerWithKeyObject="2919B560-21C0-E56C-4C7A-73CCCF49E2C1" localFKIndex="DA7FC874-4292-6791-834B-2456EC87C0C1" name="MEDICINE_DISPENSE_MOVEMENT_TYPE_FKv1">
+<createdBy>Charllot</createdBy>
+<createdTime>2025-10-08 00:32:50 UTC</createdTime>
+<generatorID>852064D4-6119-A7DD-1A9F-52832A532CF1</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<referredTableLongName>MOVEMENT_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DF4DDC9F-D535-5542-9DC4-45C8C03E50D3</referredTableID>
+<keyObject>6F496F92-A43B-FB4C-1BC2-284DA52C0E01</keyObject>
+<referredKeyID>6F496F92-A43B-FB4C-1BC2-284DA52C0E01</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MOVEMENT_TYPE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
