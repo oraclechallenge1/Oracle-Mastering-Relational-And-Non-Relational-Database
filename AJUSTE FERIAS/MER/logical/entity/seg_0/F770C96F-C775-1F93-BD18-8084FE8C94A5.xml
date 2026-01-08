@@ -27,19 +27,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="QUANTITY_DISPENSED" id="8B0A4BE0-1E78-D3FB-0CE3-76B7CC3B22AB">
-<createdBy>Charllot</createdBy>
-<createdTime>2025-10-11 00:00:25 UTC</createdTime>
-<ownerDesignName>MER</ownerDesignName>
-<engineerTo>
-<item key="0EC4106D-D3FF-3E39-B59A-F2D2A3A90B49" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="DATE_MOVIMENT" id="7240423C-EA59-D793-0150-79562DF69533">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-11 00:00:52 UTC</createdTime>

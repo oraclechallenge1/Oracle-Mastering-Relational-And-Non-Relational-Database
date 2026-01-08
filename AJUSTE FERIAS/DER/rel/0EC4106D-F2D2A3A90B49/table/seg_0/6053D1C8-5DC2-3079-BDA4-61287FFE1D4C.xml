@@ -19,18 +19,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="QUANTITY_DISPENSED" id="1CA08BC1-0377-3ECF-F364-C9C720290FF2">
-<createdBy>Charllot</createdBy>
-<createdTime>2025-10-11 00:25:55 UTC</createdTime>
-<generatorID>8B0A4BE0-1E78-D3FB-0CE3-76B7CC3B22AB</generatorID>
-<ownerDesignName>DER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="DATE_MOVIMENT" id="A0B3BAC3-FC60-0FF2-69F1-DF2FF31674DF">
 <createdBy>Charllot</createdBy>
 <createdTime>2025-10-11 00:25:55 UTC</createdTime>
