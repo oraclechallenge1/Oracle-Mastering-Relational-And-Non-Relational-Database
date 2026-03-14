@@ -82,6 +82,21 @@
 <colAssociation fkAssociation="4AF7D5E4-9E5E-574D-D8AC-AE3D0D7DE63B" referredColumn="A1940A44-3458-C4F4-4469-CC8E82331812"/>
 </associations>
 </Column>
+<Column name="NEIGHBOURHOOD_NEIGH_ID2" id="60D8304A-19C1-0732-6BB5-7C8DAA71588C">
+<createdBy>Charllot</createdBy>
+<createdTime>2026-03-14 12:34:55 UTC</createdTime>
+<generatorID>3F28E630-5422-BED9-7D49-FB9484803F5F</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5F50E56-425D-7538-F6FD-0707F82AB8C2" referredColumn="A1940A44-3458-C4F4-4469-CC8E82331812"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="0A3DB6ED-6741-AC32-81D8-6E9BBDC37960" name="ADDRESS_STOCK_PK">
@@ -116,6 +131,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AA1FCF7E-967B-1A84-B7B6-11C97C61D4FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C26A6BF3-B23D-4F2A-E6F2-C64CF91470D3" name="ADDRESS_STOCK_NEIGHBOURHOOD_FKv2">
+<createdBy>Charllot</createdBy>
+<createdTime>2026-03-14 12:34:55 UTC</createdTime>
+<generatorID>9FC392A7-1B7E-45AB-3B0B-9CDD7FF6D834</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60D8304A-19C1-0732-6BB5-7C8DAA71588C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B5F50E56-425D-7538-F6FD-0707F82AB8C2" containerWithKeyObject="664A8B6C-0296-3078-B3E5-EC1EA71F0811" localFKIndex="C26A6BF3-B23D-4F2A-E6F2-C64CF91470D3" name="ADDRESS_STOCK_NEIGHBOURHOOD_FKv2">
+<createdBy>Charllot</createdBy>
+<createdTime>2026-03-14 12:34:55 UTC</createdTime>
+<generatorID>9FC392A7-1B7E-45AB-3B0B-9CDD7FF6D834</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<referredTableLongName>NEIGHBOURHOOD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C6A1BAC-8AF7-AC4F-8096-0C6A1C2CA066</referredTableID>
+<keyObject>4D2B207B-7D87-F6C5-1B11-CD6DE3E05BAA</keyObject>
+<referredKeyID>4D2B207B-7D87-F6C5-1B11-CD6DE3E05BAA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NEIGH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
